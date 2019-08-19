@@ -4,26 +4,37 @@ The repo refers to the official open source of paper [Face Aging with Identity-P
 While their instruction is not comperhansive leading to it is hard to run the code directly following their instruction. In order to run the code smoothly for research and study, some parts of codes are modified, and add three tools for generating source files, finlaly the code has ungraded to Tensorflow 1.14.1.
 
 Please follow the instructions to prepare and run the programme.
-## Precondition for data: image name content should have age label e.g.: "14_0_4_Aaron_Johnson_0001.jpg": 14 is age and should include symbol '_'.
+*Precondition for data: image name content should have age label e.g.: "14_0_4_Aaron_Johnson_0001.jpg": 14 is age and should include symbol '_'.
 
 
-# 1. Prepared source files (path: ./tools/)for programme execution
-1) sourcefile.txt
-2) tain_data 
+## 1. Prepared source files 
+There are three tool files (path:./tools/file/):
+- getsourcefile.py
+- tools_get_testfiles.py
+- tools_get_trainfiles.py
+1) Update sourcefile.txt (path: ./tools/)
+``` *Run the script with input sources path
+   python getsourcefile.py ../DATA/TrainingSet_CACD2000
+```
+2) Update train_age_group_x.txt in folder "train_data"
+``` *Run the script with input sources path
+   python tools_get_trainfiles.py ../DATA/TrainingSet_CACD2000
+```
+3) Update test_age_group_x.txt in folder "test_data"
+``` *Run the script with test images path
+   python tools_get_trainfiles.py ../DATA/TestSet_FGNET
+```
+4) Optional:
+train_label_pair.txt is two columns which is random numbers between 0 to 4 (five age groups), and the two numbers should be different each row.
 
- (file content: image name and age)
-
-Optional:
-train_label_pair.txt
-
-2. Test
+## 2. Test
 1) pre-trained model for test
 python pre_trainedmodel_test.py
 
 2) customer model for test
 python customer_test.py --customer_model_number=199999
 
-2 Traing from scratch
+## 2 Traing from scratch
 python age_lsgan_transfer.py \
   --gan_loss_weight=75 \
   --fea_loss_weight=0.5e-4 \
