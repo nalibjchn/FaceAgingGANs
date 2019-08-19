@@ -19,12 +19,12 @@ There are three tool files (path: ./tools/file/):
    *Run the script with input sources path
    python getsourcefile.py ../DATA/TrainingSet_CACD2000
 ```
-2) Update train_age_group_x.txt in folder "train_data"
+2) Update train_age_group_xxx.txt in folder "train_data"
 ``` 
    *Run the script with input sources path
    python tools_get_trainfiles.py ../DATA/TrainingSet_CACD2000
 ```
-3) Update test_age_group_x.txt in folder "test_data"
+3) Update test_age_group_xxx.txt in folder "test_data"
 ``` 
    *Run the script with test images path
    python tools_get_trainfiles.py ../DATA/TestSet_FGNET
@@ -34,12 +34,18 @@ train_label_pair.txt is two columns which is random numbers between 0 to 4 (five
 
 ## 2. Test
 1) pre-trained model for test
-python pre_trainedmodel_test.py
-
+```
+    python pre_trainedmodel_test.py \
+         --test_data_dir=../DATA/TestSet_FGNET
+```
 2) customer model for test
-python customer_test.py --customer_model_number=199999
-
+```
+    python customer_test.py \
+         --customer_model_number=199999 \
+         --test_data_dir=../DATA/TestSet_FGNET
+```
 ## 2 Traing from scratch
+```
 python age_lsgan_transfer.py \
   --gan_loss_weight=75 \
   --fea_loss_weight=0.5e-4 \
@@ -49,7 +55,8 @@ python age_lsgan_transfer.py \
   --batch_size=32 \
   --image_size=128 \
   --max_steps=500000
-  
+  --root_folder=../DATA/TrainingSet_CACD2000
+```
 
 ## Reference
 https://github.com/dawei6875797/Face-Aging-with-Identity-Preserved-Conditional-Generative-Adversarial-Networks.git
