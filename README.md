@@ -4,24 +4,27 @@ The repo refers to the official open source of paper [Face Aging with Identity-P
 While their instruction is not comperhansive leading to it is hard to run the code directly following their instruction. In order to run the code smoothly for research and study, some parts of codes are modified, and add three tools for generating source files, finlaly the code has ungraded to Tensorflow 1.14.1.
 
 Please follow the instructions to prepare and run the programme.
-*Precondition for data: image name content should have age label e.g.: "14_0_4_Aaron_Johnson_0001.jpg": 14 is age and should include symbol '_'.
+* Precondition for data: image name content should have age label e.g.: "14_0_4_Aaron_Johnson_0001.jpg": 14 is age and should include symbol '_'.
 
 
-## 1. Prepared source files 
+## 1. Prepare source files 
 There are three tool files (path:./tools/file/):
 - getsourcefile.py
 - tools_get_testfiles.py
 - tools_get_trainfiles.py
 1) Update sourcefile.txt (path: ./tools/)
-``` *Run the script with input sources path
+``` 
+   *Run the script with input sources path
    python getsourcefile.py ../DATA/TrainingSet_CACD2000
 ```
 2) Update train_age_group_x.txt in folder "train_data"
-``` *Run the script with input sources path
+``` 
+   *Run the script with input sources path
    python tools_get_trainfiles.py ../DATA/TrainingSet_CACD2000
 ```
 3) Update test_age_group_x.txt in folder "test_data"
-``` *Run the script with test images path
+``` 
+   *Run the script with test images path
    python tools_get_trainfiles.py ../DATA/TestSet_FGNET
 ```
 4) Optional:
