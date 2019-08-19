@@ -6,7 +6,7 @@ While their instruction is not comperhansive leading to it is hard to run the co
 Please follow the instructions to prepare and run the programme.
 
 ** Precondition for data:
-  Image file name should have age label e.g.: "14_0_4_Aaron_Johnson_0001.jpg": 14 is age and should include symbol '_'.
+  - Image file name should have age label e.g.: "14_0_4_Aaron_Johnson_0001.jpg": 14 is age and should include symbol '_'.
 
 
 ## 1. Prepare source files 
@@ -32,7 +32,13 @@ There are three tool files (path: ./tools/file/):
 4) Optional:
 train_label_pair.txt is two columns which is random numbers between 0 to 4 (five age groups), and the two numbers should be different each row.
 
-## 2. Test
+## 3. Download four pre-train models into "checkpoints" folder.
+link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing
+- subfolder: 0_conv5_lsgan_transfer_g75_0.5f-4_a30 for pre-trained model from paper author.
+- subfolder: conv5_lsgan_transfer for pre-trained model from this dissertation.
+- subfolder: pre_trained for age classification and Alexnet model 
+
+## 3. Test
 1) pre-trained model for test
 ```
     python pre_trainedmodel_test.py \
@@ -44,7 +50,7 @@ train_label_pair.txt is two columns which is random numbers between 0 to 4 (five
          --customer_model_number=199999 \
          --test_data_dir=../DATA/TestSet_FGNET
 ```
-## 2 Traing from scratch
+## 4 Traing from scratch
 ```
 python age_lsgan_transfer.py \
   --gan_loss_weight=75 \
@@ -57,7 +63,7 @@ python age_lsgan_transfer.py \
   --max_steps=500000
   --root_folder=../DATA/TrainingSet_CACD2000
 ```
-## 3. Experiment result
+## 5. Experiment result
 
 ## Reference
 - https://github.com/dawei6875797/Face-Aging-with-Identity-Preserved-Conditional-Generative-Adversarial-Networks.git
