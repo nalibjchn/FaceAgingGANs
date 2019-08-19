@@ -34,9 +34,9 @@ train_label_pair.txt is two columns which is random numbers between 0 to 4 (five
 
 ## 3. Download four pre-train models into "checkpoints" folder.
 link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing
-- subfolder: 0_conv5_lsgan_transfer_g75_0.5f-4_a30 for pre-trained model from paper author.
-- subfolder: conv5_lsgan_transfer for pre-trained model from this dissertation.
-- subfolder: pre_trained for age classification and Alexnet model 
+- 0_conv5_lsgan_transfer_g75_0.5f-4_a30: pre-trained model from paper author.
+- conv5_lsgan_transfer: pre-trained model from this dissertation.
+- pre_trained: age classification and Alexnet model 
 
 ## 3. Test
 1) pre-trained model for test
