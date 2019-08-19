@@ -1,4 +1,4 @@
-# Face Aging with Identity-Preserved Conditional Generative Adversarial Networks
+# Study of Face Aging with Identity-Preserved Conditional Generative Adversarial Networks
 The repo refers to the official open source of paper [Face Aging with Identity-Preserved Conditional Generative Adversarial Networks]
 
 While their instruction is not comperhansive leading to it is hard to run the code directly following their instruction. In order to run the code smoothly for research and study, some parts of codes are modified, and add three tools for generating source files, finlaly the code has ungraded to Tensorflow 1.14.1.
@@ -57,6 +57,8 @@ python age_lsgan_transfer.py \
   --max_steps=500000
   --root_folder=../DATA/TrainingSet_CACD2000
 ```
+## 3. Experiment result
 
 ## Reference
-https://github.com/dawei6875797/Face-Aging-with-Identity-Preserved-Conditional-Generative-Adversarial-Networks.git
+- https://github.com/dawei6875797/Face-Aging-with-Identity-Preserved-Conditional-Generative-Adversarial-Networks.git
+- http://openaccess.thecvf.com/content_cvpr_2018/papers/Wang_Face_Aging_With_CVPR_2018_paper.pdf)
