@@ -5,7 +5,8 @@ While their instruction is not comperhansive leading to it is hard to run the co
 
 Please follow the instructions to prepare and run the programme.
 
-***Precondition for data: image name content should have age label e.g.: "14_0_4_Aaron_Johnson_0001.jpg": 14 is age and should include symbol '_'.
+** Precondition for data:
+  Image file name should have age label e.g.: "14_0_4_Aaron_Johnson_0001.jpg": 14 is age and should include symbol '_'.
 
 
 ## 1. Prepare source files 
