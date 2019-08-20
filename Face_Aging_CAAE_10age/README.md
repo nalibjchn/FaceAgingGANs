@@ -1,7 +1,7 @@
 # Study of Age Progression/Regression by Conditional Adversarial Autoencoder (CAAE)
 The repo refers to the official open source of paper [Age Progression/Regression by Conditional Adversarial Autoencoder]
 
-As research and study for dissertation, some parts of codes are modified, and add log file instead of print, finally the code has ungraded to Tensorflow 1.14.1.
+As a source of research and study for dissertation, some parts of codes are modified, and add log file instead of print, finally the code has ungraded to Tensorflow 1.14.1.
 
 Please follow the instructions to prepare and run the programme.
 
@@ -21,7 +21,7 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
 
 ```
 * Run the scripts with custom parameters.
-```
+
   python main.py
     --is_train=True
     --epoch=50
@@ -36,7 +36,6 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
 
 ```
 * Run the scripts with cumtom parameters.
-```
   python main.py \
     --is_train True \
     --epoch 50 \
