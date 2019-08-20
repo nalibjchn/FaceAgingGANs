@@ -64,6 +64,7 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
  - Female (Left) and Male (Right) results:
 <p align="center">
   <img src="save/test/test_as_female.png" height="400",width="800">  
+  <=================================================================>
   <img src="save/test/test_as_male.png" height="400",width="800">
 </p>
 
