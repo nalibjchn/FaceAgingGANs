@@ -55,8 +55,7 @@ Please follow the instructions to prepare and run the programme.
   <img src="CycleGAN_v1/images/34_1050.png" height="300",width="800">
   <img src="CycleGAN_v1/images/34_1150_human.png" height="300",width="800">
 </p>
-  - FaceAgeing_CycleGANs_Google_Colab.ipynb is a experimental record on the Google Colab as backup.
-  
+
 ## Reference
 - [CycleGANs tutorial]
    https://hardikbansal.github.io/CycleGANBlog/
