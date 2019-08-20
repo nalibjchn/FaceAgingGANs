@@ -52,6 +52,7 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
 ```
 ## 4 Traing from scratch
 ```
+* Run the scripts with default hyperparameters vlaues
 python age_lsgan_transfer.py \
   --gan_loss_weight=75 \
   --fea_loss_weight=0.5e-4 \
