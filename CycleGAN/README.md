@@ -63,6 +63,6 @@ Please follow the instructions to prepare and run the programme.
    https://github.com/junyanz/CycleGAN.git
 - [CycleGANs Offical Open source code, Keras]
    https://github.com/simontomaskarlsson/CycleGAN-Keras.git
-- [other references for code explemention]
+- [other references for code implementation]
  --https://github.com/eriklindernoren/Keras-GAN.git
  --https://github.com/sungnam0/Face-Aging-with-CycleGAN.git
