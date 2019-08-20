@@ -35,7 +35,7 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
 2) Training from scratch
 
 ```
-* Run the scripts with cumtom parameters.
+* Run the scripts with custom parameters.
   python main.py \
     --is_train True \
     --epoch 50 \
