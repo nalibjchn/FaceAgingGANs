@@ -1,7 +1,7 @@
-# Study of Face Aging with Identity-Preserved Conditional Generative Adversarial Networks
+# Study of Face Aging with Identity-Preserved Conditional Generative Adversarial Networks (IPCGANs)
 The repo refers to the official open source of paper [Face Aging with Identity-Preserved Conditional Generative Adversarial Networks]
 
-While their instruction is not comperhansive leading to it is hard to run the code directly following their instruction. In order to run the code smoothly for research and study, some parts of codes are modified, and add three tools for generating source files, finlaly the code has ungraded to Tensorflow 1.14.1.
+While their instruction is not comperhansive leading to it is hard to run the code directly following their instruction. In order to run the code smoothly for research and study, some parts of codes are modified, and add three tools for generating source files, finally the code has ungraded to Tensorflow 1.14.1.
 
 Please follow the instructions to prepare and run the programme.
 
@@ -32,25 +32,26 @@ There are three tool files (path: ./tools/file/):
 4) Optional:
 train_label_pair.txt is two columns which is random numbers between 0 to 4 (five age groups), and the two numbers should be different each row.
 
-## 3. Download four pre-train models into "checkpoints" folder.
+## 2. Download four pre-train models into "checkpoints" folder.
 link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing
 - 0_conv5_lsgan_transfer_g75_0.5f-4_a30: pre-trained model from paper author.
 - conv5_lsgan_transfer: pre-trained model from this dissertation.
 - pre_trained: age classification and Alexnet model 
 
 ## 3. Test
-1) pre-trained model for test
+1) Test using pre-trained model from the paper's Author
 ```
     python pre_trainedmodel_test.py \
          --test_data_dir=../DATA/TestSet_FGNET
 ```
-2) customer model for test
+2) Test using custom pre-trained model from this experiment
 ```
-    python customer_test.py \
-         --customer_model_number=199999 \
+    python custom_test.py \
+         --custom_model_number=199999 \
          --test_data_dir=../DATA/TestSet_FGNET
 ```
-## 4 Traing from scratch
+
+## 4. Traing from scratch
 ```
 * Run the scripts with default hyperparameters vlaues
 python age_lsgan_transfer.py \
