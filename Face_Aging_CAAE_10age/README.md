@@ -15,7 +15,7 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
 2) initial model and download into "init_model", and please choose "extract here" to unzip directly without subfolder .
 link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing/CAAE_init_model.zip [CAAE_init_model.zip]
 
-## 2. Traing
+## 2. Training
 
 1) Using initial model from CAAE the paper's author
 
