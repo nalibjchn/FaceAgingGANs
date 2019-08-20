@@ -23,13 +23,13 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
 * Run the scripts with custom parameters.
 
   python main.py
-    --is_train=True
-    --epoch=50
-    --dataset=../DATA/TrainingSet_CACD2000
-    --savedir=save
-    --testdir=test #when training, the test images will created in this dir each epoch.
-    --use_trained_model=False
-    --use_init_model=True
+    --is_train True
+    --epoch 50
+    --dataset ../DATA/TrainingSet_CACD2000
+    --savedir save
+    --testdir test #when training, the test images will created in this dir each epoch.
+    --use_trained_model False
+    --use_init_model True
 ```
 
 2) Training from scratch
@@ -50,7 +50,7 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
  - "summary": save loss values by TensorBroad.
  - "test": save the generated results each epoch.
 
-1) Test 
+## 3. Test 
 ```
     python main.py \
     --is_train False \
@@ -63,14 +63,14 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
 ## 4. Experiment result
  - Female (Left) and Male (Right) results:
 <p align="center">
-  <img src="save/test/test_as_female.png" height="200",width="800">  
-  <img src="save/test/test_as_male.png" height="200",width="800">
+  <img src="save/test/test_as_female.png" height="400",width="800">  
+  <img src="save/test/test_as_male.png" height="400",width="800">
 </p>
 
 ## 5. Files
 * [`ops.py`](ops.py): Build layers, such as convoluaiton, fully connection, activation function(Leaky ReLU), and images operation (load and save images).
 * [`FaceAging.py`](FaceAging.py): a class, to build a model by calling 'ops.py'
-* [`main.py`](main.py): start window to run `FaceAging.py`.
+* [`main.py`](main.py): start the programme to run `FaceAging.py`.
 
 ## Reference
 - https://github.com/ZZUTK/Face-Aging-CAAE.git
