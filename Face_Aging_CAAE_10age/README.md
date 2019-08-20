@@ -54,7 +54,7 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
 ```
     python main.py \
     --is_train False \
-    --testdir test_image_dir \ #'default: test'
+    --testdir test_image_dir \ # default: test
     --savedir save 
 ```
 **NOTE**:
