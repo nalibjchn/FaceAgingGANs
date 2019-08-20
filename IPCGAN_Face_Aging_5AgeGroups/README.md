@@ -51,7 +51,7 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
          --test_data_dir=../DATA/TestSet_FGNET
 ```
 
-## 4. Traing from scratch
+## 4. Training from scratch
 ```
 * Run the scripts with default hyperparameters vlaues
 python age_lsgan_transfer.py \
