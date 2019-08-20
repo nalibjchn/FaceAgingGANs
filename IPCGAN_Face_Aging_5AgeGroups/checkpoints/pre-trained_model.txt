@@ -1,0 +1,8 @@
+
+Pre-trained model link:
+https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing
+
+The "checkpints" folder has three subfolders: 
+1. 0_conv5_lsgan_transfer_g75_0.5f-4_a30
+2. conv5_lsgan_transfer
+3. pre_trained
