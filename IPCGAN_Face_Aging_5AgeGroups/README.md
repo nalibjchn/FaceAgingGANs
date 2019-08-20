@@ -66,7 +66,7 @@ python age_lsgan_transfer.py \
 ```
 ## 5. Experiment result
 <p align="center">
-  <img src="images/test_result/training_IPCGAN_result_new.png" width="800">
+  <img src="images/test_result/training_IPCGAN_result_new.png" height="100",width="800">
 </p>
 ## Reference
 - https://github.com/dawei6875797/Face-Aging-with-Identity-Preserved-Conditional-Generative-Adversarial-Networks.git
