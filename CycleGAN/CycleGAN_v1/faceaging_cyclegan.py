@@ -361,7 +361,7 @@ synthetic_pool_size =50
 channels = 3
 save_interval = 50
 
-root_path = '../DATA/CycleGANs_Paired_TrainingSet/'
+root_path = '../../DATA/CycleGANs_Paired_TrainingSet/'
 
 Real_label = 1  #Use e.g. 0.9 to avoid training the discriminators to zero loss
 img_shape = (256, 256, 3)

@@ -4,8 +4,15 @@ The repo refers to the official open source of paper [Cycle-consistent Generativ
 As a source of research and study for dissertation, firstly, quick implementation in Google Colab (refer to "CycleGAN_v1"), and a comperhasive source code including training, testing and custom parameters setting in "CycleGAN_v2"
 
 Please follow the instructions to prepare and run the programme.
+## 1. Install Keras-contrib 3nd package for instance normalization.
+``` 
+shell
 
-## 1. Traing
+ pip install git+https://www.github.com/keras-team/keras-contrib.git
+
+ ```
+ 
+## 2. Training
 
 1) Programme CycleGAN_v1
 ```
@@ -15,48 +22,48 @@ Please follow the instructions to prepare and run the programme.
   python faceaging_cyclegan.py
 ```
 
-2) Training from scratch
+2) Programme CycleGAN_v2
 
 ```
 * Run the scripts with custom parameters.
-  python main.py \
-    --is_train True \
-    --epoch 50 \
-    --dataset ../DATA/TrainingSet_CACD2000 \
-    --savedir save \
-    --use_trained_model False \
-    --use_init_model False
+
+  cd CycleGAN_v2 
+  python Main.py \
+      --is_train True \
+	  --pre-trained_model None \
+	  --trainA TrainA_11sto20 \
+	  --trainB TrainB_50sto70 \
+	  --root_path ../../DATA/CycleGANs_Paired_TrainingSet \ #training set path
+	  --path_testA ./test/your_testA_jpg \ #generating the result for each epoch
+      --path_testB ./test/your_testB_jpg \
 ```
-**NOTE**: During the training process, the "checkpoint", "samples", "summary" and "test" folders will be created in the "save" folder automatically. 
- - "checkpoints": save trained model.
- - "samples": save the test images( 100 images in a one png files (10*10), and the top 10 images on the first rom in one sample images will be fed into intermediate trained model. 
- - "summary": save loss values by TensorBroad.
- - "test": save the generated results each epoch.
+**NOTE**: During the training process, the "save_model", "cycGAN_G_loss", "images" will be created automatically. 
+ - "save_model": save trained models and corresponding their weights (two discrimator models, two genderator models, one combined models)
+ - "cycGAN_G_loss": save loss values by TensorBroad.
+ - "images": save the test images using the intermediate trained model and csv file for combined disscrimator fake and real loss (D_A and D_B loss). 
 
 ## 3. Test 
 ```
-    python main.py \
-    --is_train False \
-    --testdir test_image_dir \ # default: test
-    --savedir save 
+    python main.py --is_train False \ 
 ```
 **NOTE**:
-   the test result will be saved into './save/test' folders, which are two png images by genders. "test_as_female.png" and "test_as_male.png"
+   the test result will be saved into './test' folder.
 
 ## 4. Experiment result
- - Female (Left) and Male (Right) results:
+ - Training horsetozerbar and human faces results:
 <p align="center">
-  <img src="save/test/test_as_female.png" height="400",width="800">|||
-  <img src="save/test/test_as_male.png" height="400",width="800">
+  <img src="CycleGAN_v1/images/34_1050.png" height="400",width="800">
+  <img src="CycleGAN_v1/images/34_1150_human.png" height="400",width="800">
 </p>
-
-## 5. Files
-* [`ops.py`](ops.py): Build layers, such as convoluaiton, fully connection, activation function(Leaky ReLU), and images operation (load and save images).
-* [`FaceAging.py`](FaceAging.py): a class, to build a model by calling 'ops.py'
-* [`main.py`](main.py): start the programme to run `FaceAging.py`.
-
+  - FaceAgeing_CycleGANs_Google_Colab.ipynb is a experimental record on the Google Colab as backup.
+  
 ## Reference
-- [CycleGANs tutorial] https://hardikbansal.github.io/CycleGANBlog/
-- [CycleGANs Offical Open source code, TensorFlow] https://github.com/junyanz/CycleGAN.git
-- [CycleGANs Offical Open source code, Keras] https://github.com/simontomaskarlsson/CycleGAN-Keras.git
--  https://github.com/eriklindernoren/Keras-GAN.git
+- [CycleGANs tutorial]
+   https://hardikbansal.github.io/CycleGANBlog/
+- [CycleGANs Offical Open source code, TensorFlow] 
+   https://github.com/junyanz/CycleGAN.git
+- [CycleGANs Offical Open source code, Keras]
+   https://github.com/simontomaskarlsson/CycleGAN-Keras.git
+- [other references for code explemention]
+ --https://github.com/eriklindernoren/Keras-GAN.git
+ --https://github.com/sungnam0/Face-Aging-with-CycleGAN.git

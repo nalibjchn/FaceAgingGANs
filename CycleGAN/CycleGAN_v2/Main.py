@@ -10,7 +10,7 @@ from keras.backend import mean
 from keras.models import Model, model_from_json
 from keras.utils import plot_model
 from keras.engine.topology import Network
-
+from keras.callbacks import ModelCheckpoint, TensorBoard
 import numpy as np
 import random
 import datetime
@@ -29,6 +29,7 @@ from glob import glob
 from Model import *
 from data_load import *
 import argparse
+import csv
 
 
 def strTobool(value):
@@ -41,7 +42,7 @@ parser.add_argument('--is_train',type=strTobool,default='True')
 parser.add_argument('--pre-trained_model',type=str, default=None)
 parser.add_argument('--trainA',type=str, default='TrainA_11sto20')
 parser.add_argument('--trainB',type=str, default='TrainB_50sto70')
-parser.add_argument('--root_path', type=str, default='../DATA/CycleGANs_Paired_TrainingSet', help='training test folder')
+parser.add_argument('--root_path', type=str, default='../../DATA/CycleGANs_Paired_TrainingSet', help='training test folder')
 parser.add_argument('--path_testA', type=str,default= './test/014A18.jpg')
 parser.add_argument('--path_testB', type=str, default='./test/048A54.jpg')
 
@@ -81,6 +82,9 @@ class cycGAN():
         self.img_rows = 256
         self.img_columns = 256
         self.save_interval = 50
+
+        self.DA_losses = []
+        self.DB_losses = []
 
     def setup_model(self):
 
@@ -178,6 +182,29 @@ class cycGAN():
         patch = int(self.img_rows / 2 ** 4)
         self.disc_patch = (patch, patch, 1)
 
+
+    def save_loss_tocsv(self,history, time):
+
+        model_path = os.path.join('images/{}'.format(time))
+        if not os.path.exists(model_path):
+            os.makedirs(model_path)
+        keys = sorted(history.keys())
+        with open('images/{}/loss_output.csv'.format(time), 'w') as csv_file:
+            writer = csv.writer(csv_file, delimiter=',')
+            writer.writerow(keys)
+            writer.writerows(zip(*[history[key] for key in keys]))
+
+    def reNamed_logs(self,logs):
+        log_array = [float(i) for i in logs]
+        result = {}
+        result["GA_loss"] = (log_array[1] + log_array[3]) * 0.5
+        result["GB_loss"] = (log_array[4] + log_array[2]) * 0.5
+        result["GA_Fake_loss"] = log_array[1]
+        result["GB_Fake_loss"] = log_array[2]
+        result["Recon_loss"] = np.mean(log_array[3:5])
+        result["g_loss"] = log_array[0]
+        return result
+
     def saveimage(self, batch_index, epoch_index, path_testA = FLAGS.path_testA, path_testB=FLAGS.path_testB):
 
         os.makedirs('images', exist_ok=True)
@@ -225,7 +252,20 @@ class cycGAN():
 
     def train(self):
 
-        # train once
+        # checking loss
+
+        self.tb_G_loss_track = TensorBoard(log_dir='./cycGAN_G_loss', histogram_freq=0, \
+                                      batch_size= self.batch_size, \
+                                      write_graph=True, \
+                                      write_grads=False, \
+                                      write_images=False, \
+                                      embeddings_freq=0, \
+                                      embeddings_layer_names=None, \
+                                      embeddings_metadata=None, \
+                                      embeddings_data=None, \
+                                      update_freq='epoch')
+
+        self.tb_G_loss_track.set_model(self.combined_model)
         # Training discriminators one-hot vector
         valid = np.ones((self.batch_size,) + self.disc_patch)
         fake = np.zeros((self.batch_size,) + self.disc_patch)
@@ -264,6 +304,15 @@ class cycGAN():
                                                         imgs_A, imgs_B, \
                                                         imgs_A, imgs_B])
 
+                # add tensorboard
+                self.tb_G_loss_track.on_epoch_end(batch_index, logs=self.reNamed_logs(g_loss))
+
+                # collect losses for plot
+
+                self.DA_losses.append(dA_loss)
+                self.DB_losses.append(dB_loss)
+
+                time = datetime.datetime.now().strftime("%Y-%m-%d-%H%M%S")
                 print("[epoch_index: %d/%d][batch_index:%d/%d] [D loss: %f, acc: %3d%%] [G loss: %05f, adv: %05f, recon: %05f, id: %05f] [time:%s]" \
                     % (epoch, self.epochs, \
                        batch_index, batch_num, \
@@ -272,11 +321,18 @@ class cycGAN():
                        np.mean(g_loss[1:3]), \
                        np.mean(g_loss[3:5]), \
                        np.mean(g_loss[5:6]), \
-                       datetime.datetime.now()))
+                       time))
                 if batch_index % self.save_interval == 0:
                     print(
                         "<<=========save image + test image + original image + reconstruct image + return original image============>>")
                     self.saveimage(batch_index, epoch, FLAGS.path_testA, FLAGS.path_testB) #save and test
+
+            training_history = {
+                'DA_losses': self.DA_losses,
+                'DB_losses': self.DB_losses
+            }
+            self.save_loss_tocsv(training_history, time)
+            self.tb_G_loss_track.on_epoch_end(epoch)
 
             if (epoch % 50 == 0):
                 save_model(epoch, self.D_A)
