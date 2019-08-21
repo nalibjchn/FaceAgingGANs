@@ -6,9 +6,8 @@ As a source of research and study for the research project, firstly, quick imple
 Please follow the instructions to prepare and run the programme.
 ## 1. Install Keras-contrib 3nd package for instance normalization.
 ``` 
-*shell
 
- pip install git+https://www.github.com/keras-team/keras-contrib.git
+  pip install git+https://www.github.com/keras-team/keras-contrib.git
 
  ```
  
