@@ -1,5 +1,5 @@
 # Study of Cycle-consistent Generative Adversarial Networks (CycleGANs) for face aging
-The repo refers to the official open source of paper [Cycle-consistent Generative Adversarial Networks (CycleGANs)] and other related CycleGANs source codes by Keras Framework.
+The repo refers to the official open source of paper "Cycle-consistent Generative Adversarial Networks (CycleGANs)" and other related CycleGANs source codes by Keras Framework.
 
 As a source of research and study for the research project, firstly, quick implementation in Google Colab (refer to "CycleGANs_v1"), and a comprehasive source code including training, testing and custom parameters setting in "CycleGANs_v2"
 "FaceAgeing_CycleGANs_Google_Colab.ipynb" is an experimental record on the Google Colab as a backup.
