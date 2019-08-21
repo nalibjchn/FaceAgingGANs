@@ -23,28 +23,30 @@ The overview instruction below,
   <img src="infor/GPU_colab.PNG" height="120",width="800"> 
   <img src="infor/GPU_sonic.PNG" height="120",width="800">  
 </p>
-
 	 (2) Install 3rd-package dependencies of python (No need for Google Colab)
+	 
 	  In Snoic HPC cluster platform, a virtual environment has to be set up for running programmes by anaconda.
-		- 3rd-package dependencies
+	  
+- 3rd-package dependencies
 
-		```
-		     pip python 3.6.8
-		     pip install tensorflow-gpu==1.14.0
-		     pip install scipy==1.0.0
-		     pip install opencv-python==3.3.0.10
-		     pip install imageio
-		     pip install scikit-image
-		     pip install Pillow==5.1.0
-		     pip install pandas
-		     pip install -U scikit-learn
-		     pip install keras==2.2.4
-		     pip install numpy 
+```
+     pip python 3.6.8
+     pip install tensorflow-gpu==1.14.0
+     pip install scipy==1.0.0
+     pip install opencv-python==3.3.0.10
+     pip install imageio
+     pip install scikit-image
+     pip install Pillow==5.1.0
+     pip install pandas
+     pip install -U scikit-learn
+     pip install keras==2.2.4
+     pip install numpy 
 
-		 ```
-		- Other Libraries (both have pre-installed on Sonic HPC cluster service )
-		   CUDA 10.0
-		   Cudnn 7.0
+ ```
+
+- Other Libraries (both have pre-installed on Sonic HPC cluster service )
+   CUDA 10.0
+   Cudnn 7.0
    
 2. Dataset download 
 All datasets are shared on Google Drive.
