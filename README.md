@@ -13,12 +13,12 @@ The overview instruction below,
   1) Google Colab notebook: https://colab.research.google.com/notebooks/welcome.ipynb
      GPU: Tesla K80 12GB
  <p align="center">
-  <img src="infor/GPU_colab.PNG" height="100",width="800">  
+  <img src="infor/GPU_colab.PNG" height="200",width="800">  
 </p>
   2) GPU on Sonic High-Performance Computer (HPC) Cluster of UCD campus.
      GPU: "Tesla V100-PCIE-32GB"
  <p align="center">
-  <img src="infor/GPU_sonic.PNG" height="100",width="800">  
+  <img src="infor/GPU_sonic.PNG" height="200",width="800">  
 </p>
 
 - Install 3rd-package dependencies of python (No need for Google Colab)
@@ -51,18 +51,17 @@ Link:  https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?
 
 - Age_Gender_Estimators_Experiment_G-Colab
 - CycleGAN
-   --CycleGAN_v1
-   --CycleGAN_v2
+   - CycleGAN_v1
+   - CycleGAN_v2
 - Face_Age_Gender_Estimator
 - Face_Aging_CAAE_10age
 - IPCGAN_Face_Aging_5AgeGroups
 - DATA
-   --CycleGANs_Paired_TrainingSet
-   --TestSet_FGNET
-   --TrainingSet_CACD2000
-   --ValidationSet_UTKFace
+   - CycleGANs_Paired_TrainingSet
+   - TestSet_FGNET
+   - TrainingSet_CACD2000
+   - ValidationSet_UTKFace
 
 4. Miscellaneous
-
-If you cannot load jupyter notebook(.ipynb) on GitHub, please copy the path to https://nbviewer.jupyter.org/.
+   If you cannot load jupyter notebook(.ipynb) on GitHub, please copy the path to https://nbviewer.jupyter.org/.
 
