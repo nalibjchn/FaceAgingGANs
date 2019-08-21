@@ -67,4 +67,5 @@ All datasets are shared on Google Drive.
 	   - ValidationSet_UTKFace
 
 4. Miscellaneous
-   Miscellaneous If the jupyter notebooks (.ipynb) on GitHub cannot load directly, please copy the path to https://nbviewer.jupyter.org/.
+   
+   If the jupyter notebooks (.ipynb) on GitHub cannot load directly, please copy the path to https://nbviewer.jupyter.org/.
