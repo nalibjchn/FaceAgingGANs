@@ -39,7 +39,7 @@ It shows training loss and validation loss for age and gender estimators.
 Accuracy: 97%
 Confusion Matrix \
        [[1781,  146],\
-       [55, 4660]]\
+       [55, 4660]] \
 - Age model
 MEA is useful evaluaiton parameter as after training the accuracy is low 5.5%, as I need to transfer the classificaiton to regression by multiply by age range[0,100]. 
 MEA is 6.3, which means the error around (+-)6.3 
