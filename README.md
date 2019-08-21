@@ -55,14 +55,14 @@ All datasets are shared on Google Drive.
     Link:  https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing/DATA.zip
 
 3. Project Structures 
-
-	- Age_Gender_Estimators_Experiment_G-Colab
+        
+	- IPCGAN_Face_Aging_5AgeGroups
+	- Face_Aging_CAAE_10age
 	- CycleGAN
 	   - CycleGAN_v1
 	   - CycleGAN_v2
-	- Face_Age_Gender_Estimator
-	- Face_Aging_CAAE_10age
-	- IPCGAN_Face_Aging_5AgeGroups
+	- Age_Gender_Estimators_Experiment_G-Colab
+	- Face_Age_Gender_Estimator	
 	- DATA
 	   - CycleGANs_Paired_TrainingSet
 	   - TestSet_FGNET
