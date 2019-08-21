@@ -43,7 +43,7 @@ Please follow the instructions to prepare and run the programme.
 ## 3. Test 
 ```
     cd CycleGANs_v2 
-    python Main.py --is_train False \ 
+    python Main.py --is_train False
 ```
 **NOTE**:
    the test result will be saved into './images' folder.
