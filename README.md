@@ -15,14 +15,12 @@ The overview instruction below,
 	 (1) Training and Testing Environment
 	  - Google Colab notebook:
 	     - GPU: Tesla K80 12GB
-		 <p align="center">
-		  <img src="infor/GPU_colab.PNG" height="200",width="800">  
-		</p>
-	   - GPU on Sonic High-Performance Computer (HPC) Cluster of UCD campus.
+	  - GPU on Sonic High-Performance Computer (HPC) Cluster of UCD campus.
 	     - GPU: "Tesla V100-PCIE-32GB"
-		 <p align="center">
-		  <img src="infor/GPU_sonic.PNG" height="200",width="800">  
-		</p>
+<p align="center">
+  <img src="infor/GPU_colab.PNG" height="120",width="800"> 
+  <img src="infor/GPU_sonic.PNG" height="120",width="800">  
+</p>
 
 	 (2) Install 3rd-package dependencies of python (No need for Google Colab)
 	  In Snoic HPC cluster platform, a virtual environment has to be set up for running programmes by anaconda.
