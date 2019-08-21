@@ -41,14 +41,16 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
 ## 3. Test
 1) Test using the pre-trained model from the paper's Author
 ```
-    python pre_trainedmodel_test.py \
-         --test_data_dir=../DATA/TestSet_FGNET
+    python pre_trainedmodel_test.py 
+        --test_data_dir=../DATA/TestSet_FGNET \
+        --root_folder=../DATA/TrainingSet_CACD2000/
 ```
 2) Test using custom pre-trained model from this experiment
 ```
     python custom_test.py \
          --custom_model_number=199999 \
          --test_data_dir=../DATA/TestSet_FGNET
+         --root_folder=../DATA/TrainingSet_CACD2000/
 ```
 
 ## 4. Training from scratch
@@ -63,7 +65,7 @@ python age_lsgan_transfer.py \
   --batch_size=32 \
   --image_size=128 \
   --max_steps=500000
-  --root_folder=../DATA/TrainingSet_CACD2000
+  --root_folder=../DATA/TrainingSet_CACD2000/
 ```
 ## 5. Experiment result
 <p align="center">
