@@ -24,7 +24,7 @@ Please follow the instructions to prepare and run the programme.
 ```
 
 3. Test
-* Download age and gender pre-trained models (age_gender_estimators_pretrained.zip) in the "pretrained" folder. 
+* Download age and gender pre-trained models [age_gender_estimators_pretrained.zip] in the "pretrained" folder. 
 Link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing/age_gender_estimators_pretrained.zip
 
 ```
