@@ -27,10 +27,9 @@ The overview instruction below,
 	 
     In Snoic HPC cluster platform, a virtual environment has to be set up for running programmes by anaconda.
 	  
-- 3rd-package dependencies
+- 3rd-package dependencies of python=3.6.8
 
 ```
-     pip python 3.6.8
      pip install tensorflow-gpu==1.14.0
      pip install scipy==1.0.0
      pip install opencv-python==3.3.0.10
