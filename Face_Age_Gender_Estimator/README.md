@@ -4,11 +4,10 @@ This programme is developed for evaluation of generated face images, it used Oxf
 
 The model strucure is the same as DEX Gender and Age estimators based on VGG16 and implemented by Keras Framework v2.2.4.
 <p align="center">
-  <img src="output/vgg-face-model.png" height="200",width="600">  
-  [Deep Face Recognition](http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/poster.pdf)
+  <img src="output/vgg-face-model.png" height="200",width="800"> 
+ <text>
+  [Deep Face Recognition](http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/poster.pdf) </text>
 </p>
-
-
 Please follow the instructions to prepare and run the programme.
 1. Download training dataset (IMDB-WIKI) and Load Oxford VGGFace pre-train model 
 ```
@@ -33,7 +32,7 @@ e.g. 017A29.JPG -> gender_M_age_31_017A29.JPG
 4. Training result and evaluation
 It shows training loss and validation loss for age and gender estimators.
 <p align="center">
-  <img src="output/agegenderloss.PNG" height="200",width="800">  
+  <img src="output/agegenderloss.PNG" height="300",width="800">  
 </p>
 
 - Gender model
