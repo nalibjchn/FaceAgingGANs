@@ -9,21 +9,21 @@ The aim of the research project is to study and analysis face aging by three exi
 The repo includes all programmes and corresponding to comprehensive structures for running programmes.
 The overview instruction below,
 1. Environment setup for all programmes
-- Training and Testing Environment
-  1) Google Colab notebook: https://colab.research.google.com/notebooks/welcome.ipynb \
-     GPU: Tesla K80 12GB
- <p align="center">
-  <img src="infor/GPU_colab.PNG" height="200",width="800">  
-</p>
-  2) GPU on Sonic High-Performance Computer (HPC) Cluster of UCD campus. \
-     GPU: "Tesla V100-PCIE-32GB"
- <p align="center">
-  <img src="infor/GPU_sonic.PNG" height="200",width="800">  
-</p>
+ 1) Training and Testing Environment
+  - Google Colab notebook:
+     - GPU: Tesla K80 12GB
+	 <p align="center">
+	  <img src="infor/GPU_colab.PNG" height="200",width="800">  
+	</p>
+   - GPU on Sonic High-Performance Computer (HPC) Cluster of UCD campus.
+     - GPU: "Tesla V100-PCIE-32GB"
+	 <p align="center">
+	  <img src="infor/GPU_sonic.PNG" height="200",width="800">  
+	</p>
 
-- Install 3rd-package dependencies of python (No need for Google Colab) \
+2) Install 3rd-package dependencies of python (No need for Google Colab)
   In Snoic HPC cluster platform, a virtual environment has to be set up for running programmes by anaconda.
-1) 3rd-package dependencies
+- 3rd-package dependencies
 
 ```
      pip python 3.6.8
@@ -39,7 +39,7 @@ The overview instruction below,
      pip install numpy 
  
  ```
-2) Other Libraries (both have pre-installed on Sonic HPC cluster service )
+- Other Libraries (both have pre-installed on Sonic HPC cluster service )
    CUDA 10.0
    Cudnn 7.0
    
