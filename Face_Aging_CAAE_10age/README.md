@@ -1,23 +1,23 @@
 # Study of Age Progression/Regression by Conditional Adversarial Autoencoder (CAAE)
 The repo refers to the official open source of paper [Age Progression/Regression by Conditional Adversarial Autoencoder]
 
-As a source of research and study for dissertation, some parts of codes are modified, and add log file instead of print, finally the code has ungraded to Tensorflow 1.14.1.
+As a source of research and study for the research project, some parts of codes are modified and add log file instead of print, finally the code has ungraded to Tensorflow 1.14.1.
 
 Please follow the instructions to prepare and run the programme.
 
 ** Precondition for data:
-  - Image file name should have age label and gender label e.g.: "14_0_4_Aaron_Johnson_0001.jpg": 14 is age and 0 is gender (0: male, 1:female), and they both are separated by symbol '_'.
+  - The image file name should have age label and gender label e.g.: "14_0_4_Aaron_Johnson_0001.jpg": 14 is age and 0 is gender (0: male, 1: female), and they both are separated by symbol '_'.
 
 
 ## 1. Download 
 1) pre-train models and loss result into "save" folder.
 link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing/CAAE_pretrainedmodel_summary.zip [CAAE_pretrainedmodel_summary.zip]
-2) initial model and download into "init_model", and please choose "extract here" to unzip directly without subfolder .
+2) initial model and download into "init_model", and please choose "extract here" to unzip directly without subfolder.
 link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing/CAAE_init_model.zip [CAAE_init_model.zip]
 
 ## 2. Training
 
-1) Using initial model from CAAE the paper's author
+1) Using the initial model from CAAE the paper's author
 
 ```
 * Run the scripts with custom parameters.
@@ -68,7 +68,7 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
 </p>
 
 ## 5. Files
-* [`ops.py`](ops.py): Build layers, such as convoluaiton, fully connection, activation function(Leaky ReLU), and images operation (load and save images).
+* [`ops.py`](ops.py): Build layers, such as convolution, fully connection, activation function(Leaky ReLU), and images operation (load and save images).
 * [`FaceAging.py`](FaceAging.py): a class, to build a model by calling 'ops.py'
 * [`main.py`](main.py): start the programme to run `FaceAging.py`.
 
