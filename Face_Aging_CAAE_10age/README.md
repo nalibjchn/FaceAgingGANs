@@ -10,9 +10,9 @@ Please follow the instructions to prepare and run the programme.
 
 
 ## 1. Download 
-1) pre-train models and loss result into "save" folder.
+1) Pre-trained models and loss result into "save" folder.
 link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing/CAAE_pretrainedmodel_summary.zip [CAAE_pretrainedmodel_summary.zip]
-2) initial model and download into "init_model", and please choose "extract here" to unzip directly without subfolder.
+2) The initial model and download into "init_model", and please choose "extract here" to unzip directly without subfolder.
 link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing/CAAE_init_model.zip [CAAE_init_model.zip]
 
 ## 2. Training
