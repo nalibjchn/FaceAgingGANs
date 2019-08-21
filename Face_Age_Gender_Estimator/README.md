@@ -28,8 +28,8 @@ Please follow the instructions to prepare and run the programme.
 Link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing/age_gender_estimators_pretrained.zip
 * Run the script to test
 ```
-  python test.py --image_dir ./test #test image path \
-      --output_dir ./output #show the results
+  python test.py --image_dir ./test \ #directory to test images
+      --output_dir ./output #deirectory to the test results
 ```
 * Output \
 The age and gender labels will be a part of new image names in the output folder.
