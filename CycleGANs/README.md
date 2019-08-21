@@ -41,6 +41,7 @@ Please follow the instructions to prepare and run the programme.
 
 ## 3. Test 
 ```
+    cd CycleGANs_v2
     python main.py --is_train False \ 
 ```
 **NOTE**:
