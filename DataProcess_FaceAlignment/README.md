@@ -1,8 +1,9 @@
-**Genderal data analysis
-The experiment on the Google colab, the aim is general checking the age and gender distribution in three datasets, UTKFace, IMDB_WIKI and CACD2000, however,
+#### General data analysis
+
+The experiment on the Google Colab, the aim is general checking the age and gender distribution in three datasets, UTKFace, IMDB_WIKI and CACD2000, however,
 Analysis_DATASET(IMDBWIKI+UTKFace+CACD2000).ipynb
 
-**Face alignments for data processing 
+#### Face alignments for data processing 
 
 1. Precondition: 
     Install dependencies.
@@ -22,6 +23,6 @@ Analysis_DATASET(IMDBWIKI+UTKFace+CACD2000).ipynb
 
 ```
 
-**Reference
+#### Reference
 1. https://github.com/contail/Face-Alignment-with-OpenCV-and-Python.git
 2. https://www.pyimagesearch.com/2017/05/22/face-alignment-with-opencv-and-python/

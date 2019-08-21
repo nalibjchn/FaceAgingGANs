@@ -23,7 +23,7 @@ The overview instruction below,
   <img src="infor/GPU_colab.PNG" height="120",width="800"> 
   <img src="infor/GPU_sonic.PNG" height="120",width="800">  
 </p>
-	 (2) Install 3rd-package dependencies of python (No need for Google Colab)
+	 (2) Install 3rd-package dependencies of python (No need to install on Google Colab)
 	 
     In Snoic HPC cluster platform, a virtual environment has to be set up for running programmes by anaconda.
 	  
@@ -63,6 +63,7 @@ All datasets are shared on Google Drive.
 	   - CycleGAN_v2
 	- Age_Gender_Estimators_Experiment_G-Colab
 	- Face_Age_Gender_Estimator	
+	- DataProcess_FaceAlignment
 	- DATA
 	   - CycleGANs_Paired_TrainingSet
 	   - TestSet_FGNET
