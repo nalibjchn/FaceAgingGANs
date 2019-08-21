@@ -46,7 +46,7 @@ Confusion Matrix \
        [[1781,  146],\
        [55, 4660]]
 - Age model
-Mean Absolute Error (MEA) is a useful evaluaiton parameter as after training the accuracy is low 5.5%, as I need to transfer the classification to regression by multiply by age range[0,100]. 
+Mean Absolute Error (MEA) is a useful evaluation parameter as after training the accuracy is low 5.5%, as I need to transfer the classification to regression by multiply by age range[0,100]. 
 MEA is 6.3, which means the error around (+-)6.3 
 
 The detail and process result and evaluation are implemented on Google Colab in the folder: <b>ExperimentColab_Age_Gender_Estimator</b>
