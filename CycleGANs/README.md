@@ -46,7 +46,7 @@ Please follow the instructions to prepare and run the programme.
     python Main.py --is_train False \ 
 ```
 **NOTE**:
-   the test result will be saved into './test' folder.
+   the test result will be saved into './images' folder.
 
 ## 4. Experiment result
  - Training horsetozerbar and human faces results:
