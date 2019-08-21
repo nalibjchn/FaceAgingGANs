@@ -50,8 +50,7 @@ Confusion Matrix \
 MEA is useful evaluaiton parameter as after training the accuracy is low 5.5%, as I need to transfer the classificaiton to regression by multiply by age range[0,100]. 
 MEA is 6.3, which means the error around (+-)6.3 
 
-The detail and process result and evaluation are implemented on Google Colab in the folder: ExperimentColab_Age_Gender_Estimator
-
+The detail and process result and evaluation are implemented on Google Colab in the folder: <b>ExperimentColab_Age_Gender_Estimator</b>
 ## Reference
 1. [IMDB-WIKI dataset] https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/
 2. [Deep expectation of real and apparent age from a single image without facial landmarks]
