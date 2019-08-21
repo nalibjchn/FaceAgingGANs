@@ -1,12 +1,12 @@
 # Study of Face Aging with Identity-Preserved Conditional Generative Adversarial Networks (IPCGANs)
 The repo refers to the official open source of paper [Face Aging with Identity-Preserved Conditional Generative Adversarial Networks]
 
-While their instruction is not comperhansive leading to it is hard to run the code directly following their instruction. In order to run the code smoothly for research and study, some parts of codes are modified, and add three tools for generating source files, finally the code has ungraded to Tensorflow 1.14.1.
+While their instruction is not comprehensive leading to it is hard to run the code directly following their instruction. In order to run the code smoothly for research and study, some parts of codes are modified, and add three tools for generating source files, finally the code has ungraded to Tensorflow 1.14.1.
 
 Please follow the instructions to prepare and run the programme.
 
 ** Precondition for data:
-  - Image file name should have age label e.g.: "14_0_4_Aaron_Johnson_0001.jpg": 14 is age and should include symbol '_'.
+  - The image file name should have age label e.g.: "14_0_4_Aaron_Johnson_0001.jpg": 14 is age and should include symbol '_'.
 
 
 ## 1. Prepare source files 
@@ -30,7 +30,7 @@ There are three tool files (path: ./tools/file/):
    python tools_get_trainfiles.py ../DATA/TestSet_FGNET
 ```
 4) Optional:
-train_label_pair.txt is two columns which is random numbers between 0 to 4 (five age groups), and the two numbers should be different each row.
+train_label_pair.txt is two columns which are random numbers between 0 to 4 (five age groups), and the two numbers should be different each row.
 
 ## 2. Download four pre-train models into "checkpoints" folder.
 link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing
@@ -39,7 +39,7 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
 - pre_trained: age classification and Alexnet model 
 
 ## 3. Test
-1) Test using pre-trained model from the paper's Author
+1) Test using the pre-trained model from the paper's Author
 ```
     python pre_trainedmodel_test.py \
          --test_data_dir=../DATA/TestSet_FGNET
@@ -53,7 +53,7 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
 
 ## 4. Training from scratch
 ```
-* Run the scripts with default hyperparameters vlaues
+* Run the scripts with default hyperparameters values
 python age_lsgan_transfer.py \
   --gan_loss_weight=75 \
   --fea_loss_weight=0.5e-4 \
