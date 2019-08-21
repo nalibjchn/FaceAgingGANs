@@ -26,11 +26,12 @@ Please follow the instructions to prepare and run the programme.
 3. Test
 * Download age and gender pre-trained models [age_gender_estimators_pretrained.zip] in the "pretrained" folder. 
 Link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing/age_gender_estimators_pretrained.zip
-
+* Run the script to test
 ```
   python test.py --image_dir ./test #test image path \
       --output_dir ./output #show the results
 ```
+* Output \
 The age and gender labels will be a part of new image names in the output folder.
 e.g. 017A29.JPG -> gender_M_age_31_017A29.JPG
 
