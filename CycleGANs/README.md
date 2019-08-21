@@ -15,8 +15,8 @@ Please follow the instructions to prepare and run the programme.
 ```
 * Run the scripts without custom parameters
 
-  cd CycleGAN_v1
-  python faceaging_cyclegan.py
+  cd CycleGANs_v1
+  python faceaging_cyclegan.py --root_path ../../DATA/CycleGANs_Paired_TrainingSet
 ```
 
 2) Programme CycleGANs_v2
@@ -44,7 +44,7 @@ Please follow the instructions to prepare and run the programme.
     python main.py --is_train False \ 
 ```
 **NOTE**:
-   the test result will be saved into './test' folder.
+   The test result will be saved into './images' folder.
 
 ## 4. Experiment result
  - Training horsetozerbar and human faces results:
