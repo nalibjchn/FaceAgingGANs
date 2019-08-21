@@ -8,12 +8,18 @@ The model strucure is the same as DEX Gender and Age estimators based on VGG16 a
  <text>
   [Deep Face Recognition](http://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/poster.pdf) </text>
 </p>
+
 Please follow the instructions to prepare and run the programme.
+
 1. Download training dataset (IMDB-WIKI) and Load Oxford VGGFace pre-train model 
+
 ```
   !bash data_pretrainedModel_download.sh 
+  
 ```
+
 2. Training from scratch
+
 ```
    python Main.py --train_model age #value: [age or gender], choose which type of model for training
 ```
