@@ -49,8 +49,8 @@ Please follow the instructions to prepare and run the programme.
 ## 4. Experiment result
  - Training horsetozerbar and human faces results:
 <p align="center">
-  <img src="CycleGAN_v1/images/34_1050.png" height="300",width="800">
-  <img src="CycleGAN_v1/images/34_1150_human.png" height="300",width="800">
+  <img src="CycleGANs_v1/images/34_1050.png" height="300",width="800">
+  <img src="CycleGANs_v1/images/34_1150_human.png" height="300",width="800">
 </p>
 
 ## Reference
