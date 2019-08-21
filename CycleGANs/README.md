@@ -27,11 +27,11 @@ Please follow the instructions to prepare and run the programme.
   cd CycleGANs_v2 
   python Main.py \
       --is_train True \
-	  --pre-trained_model None \
-	  --trainA TrainA_11sto20 \
-	  --trainB TrainB_50sto70 \
-	  --root_path ../../DATA/CycleGANs_Paired_TrainingSet \ #training set path
-	  --path_testA ./test/your_testA_jpg \ #generating the result for each epoch
+      --pre-trained_model None \
+      --trainA TrainA_11sto20 \
+      --trainB TrainB_50sto70 \
+      --root_path ../../DATA/CycleGANs_Paired_TrainingSet \ #training set path
+      --path_testA ./test/your_testA_jpg \ #generating the result for each epoch
       --path_testB ./test/your_testB_jpg \
 ```
 **NOTE**: During the training process, the "save_model", "cycGAN_G_loss", "images" will be created automatically. 
