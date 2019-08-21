@@ -36,7 +36,8 @@ The age and gender labels will be a part of new image names in the output folder
 e.g. 017A29.JPG -> gender_M_age_31_017A29.JPG
 
 4. Training result and evaluation
-It shows training loss and validation loss for age and gender estimators.
+
+    It shows training loss and validation loss for age and gender estimators.
 <p align="center">
   <img src="output/agegenderloss.PNG" height="300",width="800">  
 </p>
