@@ -1,4 +1,5 @@
-## Final Master Research Project (2019/2020): In-depth Study of Generative Adversarial Networks for Face Aging 
+### Final Master Research Project (2019/2020):
+### In-depth Study of Generative Adversarial Networks for Face Aging ###
 
 #### Author: Na Li
 #### Student Number: 17210325
