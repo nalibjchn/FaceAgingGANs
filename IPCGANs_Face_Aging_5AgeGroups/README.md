@@ -17,17 +17,17 @@ There are three tool files (path: ./tools/file/):
 1) Update sourcefile.txt (path: ./tools/)
 ``` 
    *Run the script with input sources path
-   python getsourcefile.py ../DATA/TrainingSet_CACD2000
+   python getsourcefile.py ../../../DATA/TrainingSet_CACD2000
 ```
 2) Update train_age_group_xxx.txt in folder "train_data"
 ``` 
    *Run the script with input sources path
-   python tools_get_trainfiles.py ../DATA/TrainingSet_CACD2000
+   python tools_get_trainfiles.py ../../../DATA/TrainingSet_CACD2000
 ```
 3) Update test_age_group_xxx.txt in folder "test_data"
 ``` 
    *Run the script with test images path
-   python tools_get_trainfiles.py ../DATA/TestSet_FGNET
+   python tools_get_testfiles.py ../DATA/TestSet_FGNET
 ```
 4) Optional:
 train_label_pair.txt is two columns which are random numbers between 0 to 4 (five age groups), and the two numbers should be different each row.
