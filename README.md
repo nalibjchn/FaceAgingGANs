@@ -47,8 +47,9 @@ The overview instruction below,
 		   Cudnn 7.0
    
 2. Dataset download 
-All datasets are shared on Google Drive. 
-Link:  https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing/DATA.zip
+All datasets are shared on Google Drive.
+
+    Link:  https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing/DATA.zip
 
 3. Project Structures 
 
