@@ -1,7 +1,7 @@
 # Study of Cycle-consistent Generative Adversarial Networks (CycleGANs) for face aging
 The repo refers to the official open source of paper [Cycle-consistent Generative Adversarial Networks (CycleGANs)] and other related CycleGANs source codes by Keras Framework.
 
-As a source of research and study for the research project, firstly, quick implementation in Google Colab (refer to "CycleGAN_v1"), and a comprehasive source code including training, testing and custom parameters setting in "CycleGAN_v2"
+As a source of research and study for the research project, firstly, quick implementation in Google Colab (refer to "CycleGANs_v1"), and a comprehasive source code including training, testing and custom parameters setting in "CycleGANs_v2"
 "FaceAgeing_CycleGANs_Google_Colab.ipynb" is an experimental record on the Google Colab as a backup.
 Please follow the instructions to prepare and run the programme.
 ## 1. Install Keras-contrib 3nd package for instance normalization.
@@ -14,7 +14,7 @@ Please follow the instructions to prepare and run the programme.
  
 ## 2. Training
 
-1) Programme CycleGAN_v1
+1) Programme CycleGANs_v1
 ```
 * Run the scripts without custom parameters
 
@@ -22,12 +22,12 @@ Please follow the instructions to prepare and run the programme.
   python faceaging_cyclegan.py
 ```
 
-2) Programme CycleGAN_v2
+2) Programme CycleGANs_v2
 
 ```
 * Run the scripts with custom parameters.
 
-  cd CycleGAN_v2 
+  cd CycleGANs_v2 
   python Main.py \
       --is_train True \
 	  --pre-trained_model None \

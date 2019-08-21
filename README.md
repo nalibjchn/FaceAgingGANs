@@ -56,11 +56,11 @@ All datasets are shared on Google Drive.
 
 3. Project Structures 
         
-	- IPCGAN_Face_Aging_5AgeGroups
+	- IPCGANs_Face_Aging_5AgeGroups
 	- Face_Aging_CAAE_10age
-	- CycleGAN
-	   - CycleGAN_v1
-	   - CycleGAN_v2
+	- CycleGANs
+	   - CycleGANs_v1
+	   - CycleGANs_v2
 	- Age_Gender_Estimators_Experiment_G-Colab
 	- Face_Age_Gender_Estimator	
 	- DataProcess_FaceAlignment
