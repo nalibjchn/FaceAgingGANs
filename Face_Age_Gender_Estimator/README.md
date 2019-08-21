@@ -15,7 +15,6 @@ Please follow the instructions to prepare and run the programme.
 
 ```
   !bash data_pretrainedModel_download.sh 
-  
 ```
 
 2. Training from scratch
