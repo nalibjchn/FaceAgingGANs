@@ -25,7 +25,7 @@ The overview instruction below,
 </p>
 	 (2) Install 3rd-package dependencies of python (No need to install on Google Colab)
 	 
-    In Snoic HPC cluster platform, a virtual environment TEMPhas to be set up for running programmes by anaconda.
+    In Snoic HPC cluster platform, a virtual environment has to be set up for running programmes by anaconda.
 	  
 - 3rd-package dependencies
 
