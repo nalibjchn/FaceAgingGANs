@@ -15,7 +15,7 @@ Please follow the instructions to prepare and run the programme.
 ```
 * Run the scripts without custom parameters
 
-  cd CycleGAN_v1
+  cd CycleGANs_v1
   python faceaging_cyclegan.py
 ```
 
