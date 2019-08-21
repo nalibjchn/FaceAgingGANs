@@ -33,7 +33,7 @@ There are three tool files (path: ./tools/file/):
 train_label_pair.txt is two columns which are random numbers between 0 to 4 (five age groups), and the two numbers should be different each row.
 
 ## 2. Download four pre-train models into "checkpoints" folder.
-link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing
+link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing [IPCGANs_pre_trained_Alex.zip, IPCGANs_PretrainedModels.zip]
 - 0_conv5_lsgan_transfer_g75_0.5f-4_a30: pre-trained model from paper author.
 - conv5_lsgan_transfer: pre-trained model from this dissertation.
 - pre_trained: age classification and Alexnet model 
