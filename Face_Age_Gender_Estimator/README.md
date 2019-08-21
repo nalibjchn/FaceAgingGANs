@@ -51,7 +51,6 @@ MEA is 6.3, which means the error around (+-)6.3
 
 The detail and process result and evaluation are implemented on Google Colab in the folder: <b>ExperimentColab_Age_Gender_Estimator</b>
 ## Reference
-1. [IMDB-WIKI dataset] https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/
-2. [Deep expectation of real and apparent age from a single image without facial landmarks]
-    https://www.vision.ee.ethz.ch/publications/papers/proceedings/eth_biwi_01229.pdf
-3. [Source Coding reference]https://sefiks.com/2019/02/13/apparent-age-and-gender-prediction-in-keras/
+1. [IMDB-WIKI dataset](https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/)
+2. [Deep expectation of real and apparent age from a single image without facial landmarks]  (https://www.vision.ee.ethz.ch/publications/papers/proceedings/eth_biwi_01229.pdf)
+3. [Source Coding reference](https://sefiks.com/2019/02/13/apparent-age-and-gender-prediction-in-keras/)
