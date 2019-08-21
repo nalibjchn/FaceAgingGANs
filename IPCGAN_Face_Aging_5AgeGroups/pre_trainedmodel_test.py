@@ -38,14 +38,16 @@ flags.DEFINE_float("tv_loss_weight", None, "face_loss_weight")
 flags.DEFINE_string("pretrained_checkpoint_dir", './checkpoints/0_conv5_lsgan_transfer_g75_0.5f-4_a30/',
                     "Directory name: pre-trained model")
 
-flags.DEFINE_string("customer_checkpoint_dir", './checkpoints/conv5_lsgan_transfer/',
+flags.DEFINE_string("custom_checkpoint_dir", './checkpoints/conv5_lsgan_transfer/',
                     "Directory name to save the checkpoints for training from scratch")
                     
-flags.DEFINE_string("customer_model_number", '399999', 
+flags.DEFINE_string("custom_model_number", '399999', 
                     "Directory name to save the sample images")
                     
 flags.DEFINE_string("save_dir", './images/test_result',
                     "Directory name to save the sample images")
+
+flags.DEFINE_string("root_folder", '../DATA/TrainingSet_CACD2000/', "folder that contains images")
 #na li end
 
 flags.DEFINE_string("test_data_dir", './images/test/', "test images")
@@ -59,11 +61,11 @@ config.gpu_options.allow_growth = True
 
 generator = ImageDataGenerator(batch_size=FLAGS.batch_size, height=FLAGS.feature_size, width=FLAGS.feature_size,
                                z_dim=FLAGS.noise_dim, scale_size=(FLAGS.image_size, FLAGS.image_size),
-                               shuffle=False, mode='train')
+                               shuffle=False,root_folder= FLAGS.root_folder, mode='train')
 
 val_generator = ImageDataGenerator(batch_size=FLAGS.batch_size, height=FLAGS.feature_size, width=FLAGS.feature_size,
                                    z_dim=FLAGS.noise_dim, scale_size=(FLAGS.image_size, FLAGS.image_size),
-                                   shuffle=False, mode='test')
+                                   shuffle=False, root_folder= FLAGS.root_folder, mode='test')
 
 
 def my_test():

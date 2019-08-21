@@ -14,8 +14,7 @@ class ImageDataGenerator:
                  scale_size=(64, 64), classes=5, root_folder='./DATA/', mode='train'):
 
         # Init params
-        self.root_folder = '../DATA/CACD2000_align_withGender/'
-        #self.root_folder = root_folder
+        self.root_folder = root_folder
         if mode == 'train':
             self.file_folder = 'train_data/'
             self.class_lists = ['train_age_group_0.txt',

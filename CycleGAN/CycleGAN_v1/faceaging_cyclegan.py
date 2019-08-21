@@ -22,6 +22,7 @@ import numpy as np
 import random
 import datetime
 import time
+import argparse
 
 from imageio import imread, imsave
 from skimage.transform import resize
@@ -35,6 +36,12 @@ import matplotlib.pyplot as plt
 # %matplotlib inline
 import keras.backend as kerasbackend
 import tensorflow as tf
+
+
+
+parser = argparse.ArgumentParser(description='CycleGANs')
+parser.add_argument('--root_path', type=str, default= '../../DATA/CycleGANs_Paired_TrainingSet')
+FLAGS = parser.parse_args()
 
 np.random.seed(seed=123456)
 
@@ -201,14 +208,6 @@ def loaddata_batch(root_path, batch_size=1, is_testing=False):
     
     yield batch_num, imgs_A, imgs_B
 
-# #for unit test
-# for batch_index, (batch_num,imgs_A, imgs_B) in enumerate(loaddata_batch(root_path, 1)):
-#   print(batch_num)
-#   print(batch_index)
-#   print(imgs_A.shape)
-#   print(imgs_B.shape)
-#   break
-
 def merge(images, size):
     h, w = images.shape[1], images.shape[2]
     img = np.zeros((h * size[0], w * size[1], 3))
@@ -224,8 +223,8 @@ def saveimage(batch_index,epoch_index):
   os.makedirs('images', exist_ok=True)
   
   rows, columns = 2, 3
-  img_A = imread('.test/014A18.JPG').astype(np.float32)
-  img_B = imread('.test/048A54.JPG').astype(np.float32)
+  img_A = imread('test/014A18.jpg').astype(np.float32)
+  img_B = imread('test/048A54.jpg').astype(np.float32)
   img_A = resize(img_A, (256, 256))
   img_B = resize(img_B, (256, 256))
 #   normalization
@@ -338,6 +337,9 @@ class ImagePool():
     
       return update_image
 
+	  
+	  
+	  
 #hyperparameter setup
 lambda_A = 10.0 #cyclic loss weight A2B
 lambda_B = 10.0 #cyclic loss weight B2A
@@ -361,7 +363,8 @@ synthetic_pool_size =50
 channels = 3
 save_interval = 50
 
-root_path = '../../DATA/CycleGANs_Paired_TrainingSet/'
+#root_path = '../../DATA/CycleGANs_Paired_TrainingSet/'
+root_path = FLAGS.root_path
 
 Real_label = 1  #Use e.g. 0.9 to avoid training the discriminators to zero loss
 img_shape = (256, 256, 3)

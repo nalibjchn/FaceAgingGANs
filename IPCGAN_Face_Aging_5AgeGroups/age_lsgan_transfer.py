@@ -54,7 +54,7 @@ flags.DEFINE_string("fea_layer_name", 'conv5', "which layer to use for fea_loss"
 
 flags.DEFINE_string("source_file", 'tools/sourcefile.txt', "source file path")
 
-flags.DEFINE_string("root_folder", '../DATA/TrainingSet_CACD2000', "folder that contains images")
+flags.DEFINE_string("root_folder", '../DATA/TrainingSet_CACD2000/', "folder that contains images")
 
 FLAGS = flags.FLAGS
 
