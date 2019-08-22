@@ -11,7 +11,9 @@ Please follow the instructions to prepare and run the programme.
  
 ## 2. Training
 
-1) Programme CycleGANs_v1
+1) Paired Dataset
+   **The prepared paired dataset in the folder DATA/CycleGANs_Paired_TrainingSet/TrainA_11sto20 and TrainB_50sto70
+2) Programme CycleGANs_v1
 ```
 * Run the scripts without custom parameters
 
@@ -19,7 +21,7 @@ Please follow the instructions to prepare and run the programme.
   python faceaging_cyclegan.py --root_path ../../DATA/CycleGANs_Paired_TrainingSet
 ```
 
-2) Programme CycleGANs_v2
+3) Programme CycleGANs_v2
 
 ```
 * Run the scripts with custom parameters.
