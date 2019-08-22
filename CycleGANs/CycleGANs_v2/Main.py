@@ -331,7 +331,7 @@ class cycGAN():
                 'DA_losses': self.DA_losses,
                 'DB_losses': self.DB_losses
             }
-            self.save_loss_tocsv(training_history, time)
+            self.save_loss_tocsv(training_history, datetime.datetime.now().strftime("%Y-%m-%d-%H%M%S"))
             self.tb_G_loss_track.on_epoch_end(epoch)
 
             if (epoch % 50 == 0):
