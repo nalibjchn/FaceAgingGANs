@@ -5,6 +5,7 @@ The experiment on the Google Colab, the aim is general checking the age and gend
 #### Face alignments for data processing 
 
 1. Precondition: 
+
    (1) Install dependencies under the anaconda virtual environment (experiment environment)
    
     <b> Suggestion</b>: it is better to create a new virtual environment for data processing
