@@ -26,7 +26,9 @@ The overview instruction below,
 	 (2) Install 3rd-package dependencies of python (No need to install on Google Colab)
 	 
     In Snoic HPC cluster platform, a virtual environment has to be set up for running programmes by anaconda. 
+    $source activate
     $conda create -n myenv python=3.6.8
+    $conda activate testenv
 	  
 - 3rd-package dependencies of python=3.6.8
 
