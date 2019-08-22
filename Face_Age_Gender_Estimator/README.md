@@ -19,9 +19,18 @@ Please follow the instructions to prepare and run the programme.
 
 2. Training from scratch
 
-```
+(1) Quick single run programmes: (*Recommendation)
+
+  ```
+    python face_age_estimator_wiki_imdb.py
+  ```
+  ```
+    python face_gender_estimator_wiki_imdb.py
+  ```
+ (2) With comtom programmes:
+  ```
    python Main.py --train_model age #value: [age or gender], choose which type of model for training
-```
+  ```
 
 3. Test
 * Download age and gender pre-trained models [age_gender_estimators_pretrained.zip] in the "pretrained" folder. 
@@ -54,8 +63,6 @@ e.g. 017A29.JPG -> gender_M_age_31_017A29.JPG
   MEA is 6.3, which means the error around (+-)6.3 
 
 5. The detail and process result and evaluation are implemented on Google Colab in the folder: <b>ExperimentColab_Age_Gender_Estimator</b>
-
-6. Quick single file programme: <b> face_age_estimator_wiki_imdb.py </b>, you can run it directly to train a age model, or modify this python programme for training gender model.
 
 ## Reference
 1. [IMDB-WIKI dataset](https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/)
