@@ -55,7 +55,7 @@ e.g. 017A29.JPG -> gender_M_age_31_017A29.JPG
 
 5. The detail and process result and evaluation are implemented on Google Colab in the folder: <b>ExperimentColab_Age_Gender_Estimator</b>
 
-6. Quick single file programme: face_age_estimator_wiki_imdb.py, you can run it directly to train a age model, or modify this python programme for training gender model.
+6. Quick single file programme: <b> face_age_estimator_wiki_imdb.py </b>, you can run it directly to train a age model, or modify this python programme for training gender model.
 
 ## Reference
 1. [IMDB-WIKI dataset](https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/)
