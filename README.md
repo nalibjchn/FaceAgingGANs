@@ -12,7 +12,7 @@ The aim of the research project is to study and analysis three exits architectur
 
 The repo includes all programmes and corresponding to comprehensive structures for running programmes.
 The overview instruction below,
-1. Environment setup for all programmes
+1. Environment setup for three types of GANs programmes
 
 	 (1) Training and Testing Environment
 	  - Google Colab notebook:
