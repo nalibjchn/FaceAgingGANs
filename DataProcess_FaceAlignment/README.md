@@ -6,13 +6,22 @@ Analysis_DATASET(IMDBWIKI+UTKFace+CACD2000).ipynb
 #### Face alignments for data processing 
 
 1. Precondition: 
-    Install dependencies.
+   (1) Install dependencies under the anaconda virtual environmant (experiment environment)
 ```
 
-      pip install imutils 
+      conda install -c menpo dlib 
+      conda install -c conda-forge opencv
+      pip install imutils
       pip install dlib
-
 ```
+
+   (2) General install method
+```
+    pip install imutils
+    pip install dlib
+    pip install opencv-python
+```
+    
 
 2. Run programme with custom setting
 ```
