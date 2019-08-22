@@ -31,8 +31,8 @@ The experiment on the Google Colab, the aim is general checking the age and gend
        --notdetect_dir "notdetect" # directory to dir
 ```
 3. Results
-   <p align="center">
-  <img src="images/alignedface.png" height="400",width="800">
+<p align="center">
+  <img src="images/alignedface.png" height="200",width="800">
 </p>
 
 #### Reference
