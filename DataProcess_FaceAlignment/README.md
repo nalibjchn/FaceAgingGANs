@@ -8,7 +8,6 @@ Analysis_DATASET(IMDBWIKI+UTKFace+CACD2000).ipynb
 1. Precondition: 
    (1) Install dependencies under the anaconda virtual environmant (experiment environment)
 ```
-
       conda install -c menpo dlib 
       conda install -c conda-forge opencv
       pip install imutils
