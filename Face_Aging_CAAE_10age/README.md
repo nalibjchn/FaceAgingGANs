@@ -36,6 +36,7 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
 
 ```
 * Run the scripts with custom parameters.
+* output.log file will be created automatically to check the detail information during the training process.
   python main.py \
     --is_train True \
     --epoch 50 \
