@@ -72,4 +72,5 @@ All datasets are shared on Google Drive.
 
 4. Miscellaneous
    
-   If the jupyter notebooks (.ipynb) on GitHub cannot load directly, please copy the path to https://nbviewer.jupyter.org/.
+   - If the jupyter notebooks (.ipynb) on GitHub cannot load directly, please copy the path to https://nbviewer.jupyter.org/.
+   - If the training process is not successful in a programme, please double check the training set path you provided.
