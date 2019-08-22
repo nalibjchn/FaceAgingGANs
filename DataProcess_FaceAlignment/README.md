@@ -7,7 +7,8 @@ Analysis_DATASET(IMDBWIKI+UTKFace+CACD2000).ipynb
 
 1. Precondition: 
    (1) Install dependencies under the anaconda virtual environment (experiment environment)
-    **Suggestion: it is better to create a new virtual environment for data processing
+   
+    <b> Suggestion</b>: it is better to create a new virtual environment for data processing
 ```
       conda install -c menpo dlib 
       conda install -c conda-forge opencv
