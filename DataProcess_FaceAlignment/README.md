@@ -29,8 +29,12 @@ The experiment on the Google Colab, the aim is general checking the age and gend
        --root_dir "../DATA/" \  # directory to source data
        --des_dir "training_align" \ # directory to destination for aligned data
        --notdetect_dir "notdetect" # directory to dir
-
 ```
+3. Results
+   <p align="center">
+  <img src="images/alignedface.png" height="400",width="800">
+</p>
+
 #### Reference
 1. https://github.com/contail/Face-Alignment-with-OpenCV-and-Python.git
 2. https://www.pyimagesearch.com/2017/05/22/face-alignment-with-opencv-and-python/
