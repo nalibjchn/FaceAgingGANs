@@ -6,7 +6,8 @@ Analysis_DATASET(IMDBWIKI+UTKFace+CACD2000).ipynb
 #### Face alignments for data processing 
 
 1. Precondition: 
-   (1) Install dependencies under the anaconda virtual environmant (experiment environment)
+   (1) Install dependencies under the anaconda virtual environment (experiment environment)
+    **Suggestion: it is better to create a new virtual environment for data processing
 ```
       conda install -c menpo dlib 
       conda install -c conda-forge opencv
