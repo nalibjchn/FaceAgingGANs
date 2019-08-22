@@ -1,7 +1,6 @@
 #### General data analysis
 
-The experiment on the Google Colab, the aim is general checking the age and gender distribution in three datasets, UTKFace, IMDB_WIKI and CACD2000, however,
-Analysis_DATASET(IMDBWIKI+UTKFace+CACD2000).ipynb
+The experiment on the Google Colab, the aim is general checking the age and gender distribution in three datasets, UTKFace, IMDB_WIKI and CACD2000, <b>Analysis_DATASET(IMDBWIKI+UTKFace+CACD2000).ipynb</b>
 
 #### Face alignments for data processing 
 
