@@ -12,7 +12,8 @@ Please follow the instructions to prepare and run the programme.
 ## 2. Training
 
 1) Paired Dataset
-   **The prepared paired dataset in the folder DATA/CycleGANs_Paired_TrainingSet/TrainA_11sto20 and TrainB_50sto70
+
+   **The prepared paired dataset in the folder DATA/CycleGANs_Paired_TrainingSet/ (TrainA_11sto20 and TrainB_50sto70)
 2) Programme CycleGANs_v1
 ```
 * Run the scripts without custom parameters
