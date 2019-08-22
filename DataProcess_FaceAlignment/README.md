@@ -26,13 +26,12 @@ Analysis_DATASET(IMDBWIKI+UTKFace+CACD2000).ipynb
 
 2. Run programme with custom setting
 ```
-   python align_faces.py \
+   python aligment_faceimages.py \
        --root_dir "../DATA/" \  # directory to source data
        --des_dir "training_align" \ # directory to destination for aligned data
        --notdetect_dir "notdetect" # directory to dir
 
 ```
-
 #### Reference
 1. https://github.com/contail/Face-Alignment-with-OpenCV-and-Python.git
 2. https://www.pyimagesearch.com/2017/05/22/face-alignment-with-opencv-and-python/
