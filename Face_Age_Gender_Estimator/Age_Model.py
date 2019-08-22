@@ -19,11 +19,9 @@ https://github.com/rcmalli/keras-vggface.git
 from keras_vggface.vggface import VGGFace
 
 
-def ageModel(self,input_shape=(224, 224, 3)):
+def ageModel(input_shape=(224, 224, 3)):
 
-    self.input_shape = input_shape
-
-    vgg_model = VGGFace(include_top=False, model='vgg16', weights='vggface', input_shape=self.input_shape)
+    vgg_model = VGGFace(include_top=False, model='vgg16', weights='vggface', input_shape=input_shape)
     print("Base VGG model summary.")
     vgg_model.summary()
 
