@@ -56,6 +56,7 @@ link: https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?u
 ## 4. Training from scratch
 ```
 * Run the scripts with default hyperparameters values
+* output.log file will be created automatically to check the detail information during the training process.
 python age_lsgan_transfer.py \
   --gan_loss_weight=75 \
   --fea_loss_weight=0.5e-4 \
@@ -67,6 +68,7 @@ python age_lsgan_transfer.py \
   --max_steps=500000
   --root_folder=../DATA/TrainingSet_CACD2000/
 ```
+
 ## 5. Experiment result
 <p align="center">
   <img src="images/test_result/training_IPCGAN_result_new.png" height="400",width="800">
