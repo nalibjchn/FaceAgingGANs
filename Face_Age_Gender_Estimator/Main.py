@@ -31,7 +31,7 @@ class estimator():
                  epochs=250,
                  batch_size=80):
         self.input_shape = input_shape
-        self.row = input_shape(0)
+        self.row = 224
         self.col = 224
         self.channel = 3
         self.testsize = testsize
@@ -128,7 +128,7 @@ class estimator():
     def train_gendermodel(self, model_type='vgg16'):
 
         # initial face model
-        self.gender_vgg_model = genderModel(input_shape=self.input_shape,model_type=model_type)
+        self.gender_vgg_model = vggface_vgg16_gender(input_shape=self.input_shape,model_type=model_type)
         self.gender_vgg_model.compile(loss='categorical_crossentropy', \
                                        optimizer=Adam(lr=1e-3), \
                                        metrics=['accuracy'])
