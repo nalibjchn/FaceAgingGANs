@@ -123,7 +123,7 @@ if __name__ == '__main__':
     #perpare training and test data with labels.
     num_gender_classes = 2
 
-    target_classes = to_categorical(df['age'].values, num_gender_classes)
+    target_classes = to_categorical(df['gender'].values, num_gender_classes)
 
     image_features = []
     for i in range(0, df.shape[0]):
