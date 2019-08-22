@@ -52,7 +52,8 @@ The overview instruction below,
 2. Dataset download 
 All datasets are shared on Google Drive.
 
-    Link:  https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing/DATA.zip [DATA.zip]
+    Link:  https://drive.google.com/drive/folders/1AN4V-cdq0pIUXtXyWBtIcveJI12WZnlh?usp=sharing/DATA 
+    [TrainingSet_CACD2000.zip, ValidationSet_UTKFace.zip, CycleGANs_Paired_TrainingSet, TestSet_FGNET.zip]
 
 3. Project Structures 
         
