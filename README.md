@@ -51,6 +51,10 @@ The overview instruction below,
  ```
 - Run sbatch job
 ```
+* Download prject
+ $ !git clone https://csgitlab.ucd.ie/li/faceaginggans.git
+ 
+* It is better run sbatch scrips under the project main folder ("faceaginggans") after downloading
 * Run on GPU
  $ sbatch --partition=csgpu gpujob.sh 
 * Run on CPU
