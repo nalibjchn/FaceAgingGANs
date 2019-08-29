@@ -32,8 +32,6 @@ The overview instruction below,
     $ source activate
     $ conda create -n myenv python=3.6.8
     $ conda activate myenv
-    
-    $ sbatch --partition=csgpu gpujob.sh  #run one job command line
 ```
     
 - 3rd-package dependencies of python=3.6.8
@@ -51,7 +49,13 @@ The overview instruction below,
      pip install numpy 
 
  ```
-
+- Run sbatch job
+```
+* Run on GPU
+ $ sbatch --partition=csgpu gpujob.sh 
+* Run on CPU
+ $ sbatch cpujob.sh
+```
 - Other Libraries (both has pre-installed on Sonic HPC cluster service )
    
    CUDA 10.0 \
