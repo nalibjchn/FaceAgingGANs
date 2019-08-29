@@ -25,11 +25,16 @@ The overview instruction below,
 </p>
 	 (2) Install 3rd-package dependencies of python (No need to install on Google Colab)
 	 
-    In Snoic HPC cluster platform, a virtual environment has to be set up for running programmes by anaconda. 
-    $source activate
-    $conda create -n myenv python=3.6.8
-    $conda activate testenv
-	  
+    In Snoic HPC cluster platform, a virtual environment TEMPhas to be set up for running programmes by anaconda.
+    "myenv" is the name of environment
+```    
+    $ cd /opt/software/anaconda/3.5.2/bin
+    $ source activate
+    $ conda create -n myenv python=3.6.8
+    $ conda activate myenv
+    
+    $ sbatch --partition=csgpu gpujob.sh  #run one job command line
+```
 - 3rd-package dependencies of python=3.6.8
 
 ```
@@ -46,7 +51,7 @@ The overview instruction below,
 
  ```
 
-- Other Libraries (both have pre-installed on Sonic HPC cluster service )
+- Other Libraries (both has pre-installed on Sonic HPC cluster service )
    
    CUDA 10.0 \
    Cudnn 7.0
