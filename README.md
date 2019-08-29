@@ -26,7 +26,7 @@ The overview instruction below,
 	 (2) Install 3rd-package dependencies of python (No need to install on Google Colab)
 	 
     In Snoic HPC cluster platform, a virtual environment has to be set up for running programmes by anaconda.
-    "myenv" is the name of environment, the sample sbatch (.sh) script files in /sbatchs folder.
+    "myenv" is the name of environment, the sample sbatch (.sh) script files in /sbatches folder.
 ```    
     $ cd /opt/software/anaconda/3.5.2/bin
     $ source activate
